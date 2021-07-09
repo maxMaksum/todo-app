@@ -44,7 +44,7 @@ function App() {
 
   },[pokemon, text])
 
-  console.log(filteredPokemon)
+  git
   return (
     <Router>
       <div className="App">
