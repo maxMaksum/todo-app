@@ -33,7 +33,7 @@ function ListItems({name, completed, id}) {
         console.log(checkedValue)
         const newTodos =[...todos]
         newTodos.map((todo, index)=>{
-            if(id===index)todo.completed=!checkedValue
+            if(id===index)todo.completed=checkedValue
         })
         setTodos(newTodos)
     }
@@ -54,7 +54,7 @@ function ListItems({name, completed, id}) {
                         <input
                             type="text"
                             value={editValue}
-                            onChange ={(e)=>setCheckedValue(!checkedValue)}
+                            onChange ={(e)=>setEditValue(e.target.value)}
                         />
                     </div>
                 }

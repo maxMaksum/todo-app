@@ -1,4 +1,4 @@
-import React, {useContext, useState, useEffect } from 'react'
+import React, {useContext, useState} from 'react'
 import {DataContext} from "./DataProvider"
 
 function InputForm() {
@@ -18,8 +18,6 @@ function InputForm() {
     }
 
 
-
-    console.log(todos)
     return (
         <div>
             <form>
